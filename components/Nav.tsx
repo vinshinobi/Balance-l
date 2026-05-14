@@ -39,7 +39,7 @@ export default function Nav() {
             <div className="w-8 h-8 bg-amber rounded-full flex items-center justify-center shrink-0">
               <UtensilsCrossed className="w-4 h-4 text-white" strokeWidth={1.8} />
             </div>
-            <span className="font-serif text-xl text-brown-deep leading-none">
+            <span className="font-serif text-xl text-white leading-none">
               La Balance&apos;l
             </span>
           </a>
