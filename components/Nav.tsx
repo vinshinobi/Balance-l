@@ -50,7 +50,7 @@ export default function Nav() {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-sm font-medium text-brown-light hover:text-amber px-3 py-2 rounded-lg
+                className="text-sm font-medium text-white hover:text-amber px-3 py-2 rounded-lg
                            hover:bg-amber-pale transition-colors duration-150 whitespace-nowrap"
               >
                 {l.label}
