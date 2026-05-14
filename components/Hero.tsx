@@ -6,20 +6,21 @@ export default function Hero() {
       id="accueil"
       className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden hero-grain"
     >
-      {/* Warm gradient background */}
+      {/* Image background */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: 'url(/src/crepe.webp)' }}
+        aria-hidden="true"
+      />
+
+      {/* Dark overlay for readability */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(160deg, #1A0A02 0%, #3D2214 35%, #6B4226 65%, #C27A38 100%)',
+            'linear-gradient(160deg, rgba(26,10,2,0.80) 0%, rgba(61,34,20,0.70) 40%, rgba(107,66,38,0.55) 75%, rgba(194,122,56,0.45) 100%)',
         }}
       />
-
-      {/* Decorative circles */}
-      <div className="absolute top-1/4 right-1/4 w-72 h-72 rounded-full opacity-10"
-        style={{ background: 'radial-gradient(circle, #DFA568 0%, transparent 70%)' }} />
-      <div className="absolute bottom-1/3 left-1/6 w-96 h-96 rounded-full opacity-8"
-        style={{ background: 'radial-gradient(circle, #C27A38 0%, transparent 70%)' }} />
 
       {/* Content */}
       <div className="relative z-10 text-center px-5 max-w-4xl mx-auto">
